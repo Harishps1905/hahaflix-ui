@@ -45,7 +45,7 @@ export default function TVShows() {
         <div className="data">
             <SelectGenre genres={genres} type="tv"/>
             {/* {console.log(movies)} */}
-            {movies.length ? <Slider movies={movies} /> : <NotAvailable/>}
+            {movies ? <Slider movies={movies} /> : <NotAvailable/>}
         </div>
     </Container>
   )

@@ -45,7 +45,7 @@ export default function Movies() {
         <div className="data">
             <SelectGenre genres={genres} type="movie"/>
             {/* {console.log(movies)} */}
-            {movies.length ? <Slider movies={movies} /> : <NotAvailable/>}
+            {movies ? <Slider movies={movies} /> : <NotAvailable/>}
         </div>
     </Container>
   )

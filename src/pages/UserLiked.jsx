@@ -38,7 +38,7 @@ export default function UserLiked() {
         <div className="content flex column">
             <h1>My list</h1>
             <div className="grid flex">
-                {movies.length? movies.map((movie, index) =>{
+                {movies? movies.map((movie, index) =>{
                     return (
                         <Card 
                             movieData={movie}
